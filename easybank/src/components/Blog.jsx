@@ -44,7 +44,7 @@ const Blog = () => {
     );
 
     return (
-    <section className='font-public-sans bg-VeryLightGray'>
+    <section id='blog' className='font-public-sans bg-VeryLightGray'>
         <div className='pt-24 pb-16 md:px-32 2xl:w-[1440px] m-auto'>
             <h2 className='heading2'>Latest Articles</h2>
 

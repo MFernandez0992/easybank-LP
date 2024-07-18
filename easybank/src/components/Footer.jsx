@@ -8,7 +8,7 @@ import LogoSVG from './LogoSvg';
 const Footer = () => {
   return (
     <footer className='bg-DarkBlue md:px-0 2xl:px-32 pt-8 flex flex-col items-center h-auto font-public-sans'>
-        <section className='flex flex-col md:flex-row gap-8 md:gap-0 justify-around md:w-full 2xl:w-[1440px] m-auto'>
+        <section id='footer' className='flex flex-col md:flex-row gap-8 md:gap-0 justify-around md:w-full 2xl:w-[1440px] m-auto'>
             <div className='flex flex-col gap-8 md:gap-0 m-auto md:m-0 justify-between'>
                 <LogoSVG className="h-6 text-white" />
                 <div className='flex gap-3'>

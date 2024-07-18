@@ -15,11 +15,11 @@ const Header = () => {
       <img src={logo} className="h-6" alt="Logo" />
 
       <nav className="hidden md:flex list-none gap-6 text-GrayishBlue">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Careers</a></li>
+        <li><a className='hover:border-b-2 hover:pb-2 hover:border-b-LimeGreen' href="#hero">Home</a></li>
+        <li><a className='hover:border-b-2 hover:pb-2 hover:border-b-LimeGreen' href="#about">About</a></li>
+        <li><a className='hover:border-b-2 hover:pb-2 hover:border-b-LimeGreen' href="#footer">Contact</a></li>
+        <li><a className='hover:border-b-2 hover:pb-2 hover:border-b-LimeGreen' href="#blog">Blog</a></li>
+        <li><a className='hover:border-b-2 hover:pb-2 hover:border-b-LimeGreen' href="#footer">Careers</a></li>
       </nav>
 
       <div className="md:hidden">

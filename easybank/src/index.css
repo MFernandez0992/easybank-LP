@@ -4,6 +4,10 @@
 
 .attribution { font-size: 11px; text-align: center; }
 
+html{
+    scroll-behavior: smooth;
+}
+
 p{
     font-size: 18px;
     color: hsl(233, 8%, 62%);
