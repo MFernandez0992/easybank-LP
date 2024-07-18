@@ -44,14 +44,16 @@ const Blog = () => {
     );
 
     return (
-    <section className='pt-24 pb-16 md:px-32 font-public-sans bg-VeryLightGray 2xl:w-[1440px] m-auto'>
+    <section className='font-public-sans bg-VeryLightGray'>
+        <div className='pt-24 pb-16 md:px-32 2xl:w-[1440px] m-auto'>
+            <h2 className='heading2'>Latest Articles</h2>
 
-        <h2 className='heading2'>Latest Articles</h2>
+            <div className="flex flex-col px-8 md:px-0 md:flex-row gap-4 2xl:gap-8">
+                {Object.entries( articles ).map( ( [ key, article ] ) => (
+                    <Card key={ key } author={ article.author } title={ article.title } description={ article.description } img={ article.img } />
+                ))}
+            </div>
 
-        <div className="flex flex-col px-8 md:px-0 md:flex-row gap-4 2xl:gap-8">
-            {Object.entries( articles ).map( ( [ key, article ] ) => (
-                <Card key={ key } author={ article.author } title={ article.title } description={ article.description } img={ article.img } />
-            ))}
         </div>
 
 

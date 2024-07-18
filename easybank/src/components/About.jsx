@@ -37,17 +37,18 @@ const About = () => {
     );
 
     return (
-    <section className='mt-56 md:mt-0 md:px-32 py-16 md:py-24 font-public-sans bg-LightGrayishBlue 2xl:w-[1440px] m-auto text-center md:text-left'>
+    <section className='font-public-sans bg-LightGrayishBlue'>
+        <div className='mt-56 md:mt-0 md:px-32 py-16 md:py-24 2xl:w-[1440px] m-auto text-center md:text-left'>
+            <h2 className='heading2 mb-4'>Why choose Easybank?</h2>
+            <p className='text-base mt-4'>We leverage Open Banking to turn your bank account into your financial hub.<br />Control 
+            your finances like never before.</p>
+    
 
-        <h2 className='heading2 mb-4'>Why choose Easybank?</h2>
-        <p className='text-base mt-4'>We leverage Open Banking to turn your bank account into your financial hub.<br />Control 
-        your finances like never before.</p>
-  
-
-        <div className="flex flex-col md:flex-row gap-4">
-            {Object.entries(cards).map(([key, card]) => (
-                <Card key={key} title={card.title} description={card.description} img={card.img} />
-            ))}
+            <div className="flex flex-col md:flex-row gap-4">
+                {Object.entries(cards).map(([key, card]) => (
+                    <Card key={key} title={card.title} description={card.description} img={card.img} />
+                ))}
+            </div>
         </div>
 
 
