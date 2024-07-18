@@ -11,11 +11,11 @@ const Header = () => {
   };
 
   return (
-    <header className="flex flex-row px-6 md:px-32 py-6 justify-between items-center font-public-sans 2xl:w-[1440px] m-auto z-50 bg-white relative">
+    <header id='header' className="flex flex-row px-6 md:px-32 py-6 justify-between items-center font-public-sans 2xl:w-[1440px] m-auto z-50 bg-white relative">
       <img src={logo} className="h-6" alt="Logo" />
 
       <nav className="hidden md:flex list-none gap-6 text-GrayishBlue">
-        <li><a className='hover:border-b-2 hover:pb-2 hover:border-b-LimeGreen' href="#hero">Home</a></li>
+        <li><a className='hover:border-b-2 hover:pb-2 hover:border-b-LimeGreen' href="#header">Home</a></li>
         <li><a className='hover:border-b-2 hover:pb-2 hover:border-b-LimeGreen' href="#about">About</a></li>
         <li><a className='hover:border-b-2 hover:pb-2 hover:border-b-LimeGreen' href="#footer">Contact</a></li>
         <li><a className='hover:border-b-2 hover:pb-2 hover:border-b-LimeGreen' href="#blog">Blog</a></li>
